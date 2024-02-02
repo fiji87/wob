@@ -5,3 +5,4 @@ gemspec
 
 gem "jekyll"
 gem "json"
+gem "jekyll-theme-conference"
