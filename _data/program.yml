@@ -1,0 +1,153 @@
+days:
+- name: February 19, Monday
+  abbr: 19
+  date: 2024-02-19
+  rooms:
+    - name: Aula Magna
+      talks:
+        - name: Welcome and introduction
+          time_start: '09:00'
+          time_end: '09:30'
+
+        - name: Explainable AI for synergistic human-AI collaboration
+          time_start: '09:30'
+          time_end: '09:40'
+
+        - name: The LORE framework
+          time_start: '09:40'
+          time_end: '10:00'
+
+        - name: 'AI, Meet Human: Learning Paradigms for Hybrid Decision Making Systems'
+          time_start: '10:00'
+          time_end: '10:20'
+
+        - name: Explainable diagnosis of oral cancer via deep learning and case-based reasoning
+          time_start: '10:20'
+          time_end: '10:40'
+
+        - name: 'ABEL: Human-in-the-loop in Human-Robot Interaction'
+          time_start: '10:40'
+          time_end: '11:00'
+
+        - name: 'System 1 and System 2: Machine Learning and Reasoning'
+          time_start: '11:30'
+          time_end: '11:45'
+        
+        - name: 'PN-OWL: A Two-Stage Algorithm to Learn Fuzzy Concept Inclusions Rules from OWL 2 Ontologies'
+          time_start: '11:45'
+          time_end: '12:00'
+        
+        - name: 'REASONX: Declarative Reasoning on Explanations Using Constraint Logic Programming'
+          time_start: '12:00'
+          time_end: '12:20'
+        
+        - name: 'Non-standard analysis to empower machine learning and deep learning algorithms: preliminary theoretical results'
+          time_start: '12:20'
+          time_end: '12:40'
+        
+        - name: TBA
+          time_start: '12:40'
+          time_end: '13:00'
+
+        - name: Human-centered Lifelong Learning for Complex Data
+          time_start: '14:00'
+          time_end: '14:10'
+        
+        - name: 'ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models'
+          time_start: '14:10'
+          time_end: '14:20'
+        
+        - name: 'VISIONE: A software tool for searching and browsing large video collections'
+          time_start: '14:20'
+          time_end: '14:30'
+        
+        - name: Advances in node classification with efficient models for learning on graphs
+          time_start: '14:30'
+          time_end: '14:40'
+        
+        - name: Pervasive continually learning RNNs with guarantees
+          time_start: '14:40'
+          time_end: '14:50'
+        
+        - name: What do Large Language Models know about engineering relations?
+          time_start: '14:50'
+          time_end: '15:00'
+        
+        - name: Lifelong learning for socially and environmentally sustainable AI
+          time_start: '15:00'
+          time_end: '15:10'
+        
+        - name: Learning to quantify graph nodes
+          time_start: '15:10'
+          time_end: '15:20'
+        
+        - name: Keynote talk
+          time_start: '16:00'
+          time_end: '17:00'
+
+
+    - name: Aula PS4
+      talks:
+        - name: First poster session
+          time_start: '17:30'
+          time_end: '19:00'
+
+- name: February 20, Thursday
+  abbr: 20
+  date: 2024-02-20
+  rooms:
+    - name: Aula Magna
+      talks:
+        - name: Human-AI Socio-Technical Complex Systems
+          time_start: '09:00'
+          time_end: '09:10'
+        
+        - name: Decentralized, cooperative learning
+          time_start: '11:30'
+          time_end: '11:45'
+        
+        - name: Energy-efficient KNN on FPGA
+          time_start: '11:45'
+          time_end: '12:10'
+
+        - name: Exploring the Impact of Disrupted P2P Communications on Fully Decentralised Learning in Disaster Scenarios
+          time_start: '12:10'
+          time_end: '12:35'
+
+        - name: 'Federated learning of interpretable AI models: a privacy preserving solution to collaboratively learn Trustworthy AI systems'
+          time_start: '12:35'
+          time_end: '13:00'
+
+        - name: Co-design methodologies for trustworthiness by-design
+          time_start: '14:00'
+          time_end: '14:10'
+
+        - name: Overview and analysis on the Ethical Codes
+          time_start: '14:10'
+          time_end: '14:30'
+
+        - name: Ethics, image generation and AI
+          time_start: '14:30'
+          time_end: '14:50'
+
+        - name: Formal verification of neural networks in cyber-physical systems 
+          time_start: '14:50'
+          time_end: '15:10'
+
+        - name: Privacy risk assessment of (X)AI systems and their mitigation
+          time_start: '15:10'
+          time_end: '15:30'
+        
+        - name: FAIR Spoke 1 meets industry
+          time_start: '16:00'
+          time_end: '17:00'
+        
+        - name: Round table of WP leaders
+          time_start: '17:00'
+          time_end: '18:00'
+
+    - name: Aula PS4
+      talks:
+        - name: Second poster session
+          time_start: '18:00'
+          time_end: '19:00'

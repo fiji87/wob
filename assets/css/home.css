@@ -1,0 +1,85 @@
+:root {
+    --fairblue: #64a9dd;
+    --fairred: #eb6666;
+    --fairorange: #f8b258;
+    --fairpurple: #78579f;
+}
+
+.btn.streaming {
+    float: right;
+    border-color: var(--fairred);
+}
+
+.btn-outline-primary {
+    color: black;
+    border-color: black;
+}
+
+.btn-outline-primary:disabled,
+.btn.streaming {
+    color: darkgray;
+    outline-color: darkgray;
+}
+
+.btn-outline-primary:disabled,
+.btn.streaming {
+    border-color: darkgray;
+}
+
+.btn-outline-primary:hover {
+    color: white;
+}
+
+.btn-outline-primary:nth-child(1):hover {
+    color: white;
+    background: var(--fairblue);
+    border-color: var(--fairblue);   
+}
+
+.btn-outline-primary:nth-child(2):hover {
+    background: var(--fairred);
+    border-color: var(--fairred);   
+}
+
+.btn-outline-primary:nth-child(3):hover {
+    color: black;
+    background: var(--fairorange);
+    border-color: var(--fairorange);   
+}
+
+.btn-outline-primary:nth-child(4):hover {
+    background: var(--fairpurple);
+    border-color: var(--fairpurple);   
+}
+
+/* fancy border bottom */
+.jumbotron {
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(90deg,
+                                rgba(100,169,221,1) 0%,
+                                rgba(235,102,102,1) 33%,
+                                rgba(248,178,88,1) 66%,
+                                rgba(120,87,159,1) 100%);
+    border-image-slice: 1;
+    width:100%;
+}
+
+
+/* background image */
+.jumbotron {
+    overflow: hidden;
+    position: relative;
+}
+
+.demo-bg {
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 5;
+    width: 50%;
+    height: auto;
+}
+
+.jumbotron > .display-3 {
+    position: relative;
+}

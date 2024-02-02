@@ -1,0 +1,784 @@
+{% include partials/header.html %}
+  {% assign nbr_days = site.data.program.days | size -%}
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/program.css"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/talks.css"/>
+  <script>
+    // I am ashamed to do this but it's not working and I'm supposed to be doing research right now
+    // not scriptkidding my way through conference websites
+    $("document").ready(function(){
+      $("#tab-19").on(
+        "click",
+        function() {
+          $("#20").removeClass("active");
+          $("#19").addClass("active");
+        }
+      );
+      $("#tab-20").on(
+        "click",
+        function() {
+          $("#19").removeClass("active");
+          $("#20").addClass("active");
+        }
+      );
+      });
+    </script>
+
+  <h1 class="display-5 {% if nbr_days > 1 -%} mb-2 {%- else -%} mb-4 {%- endif %}">
+    {%- if page.title -%}
+      {{- page.title -}}
+    {%- else -%}
+      {{- site.data.lang[site.conference.lang].program.title | default: "Program" -}}
+    {%- endif -%}
+  </h1>
+
+  {{ content }}
+
+  {%- if nbr_days > 1 %}
+    <div class="ui top attached tabular menu" id="toptabs">
+      <div class="active item" data-tab="listview">List view</div>
+      <div class="item" data-tab="calendarview">Calendar view</div>
+    </div>
+    
+    <div class="ui bottom attached active tab segment" data-tab="listview">
+      
+      <!-- Inner tabs -->
+      <div class="ui top attached tabular menu" id="innertabs">
+        <div class="active item" data-tab="monday">Monday 19</div>
+        <div class="item" data-tab="tuesday">Tuesday 20</div>
+      </div>
+      
+      <div class="ui bottom attached active tab segment" data-tab="monday">
+
+        <div class="ui segments posters">
+            <div class="ui segment poster wp1 two column grid container">
+              <div class="column">
+                <span class="title"><a href="/talks/wp1/">Explainable AI for synergistic human-AI collaboration</a></span>
+                <span class="speaker">Fosca Giannotti</span>
+                <span class="speaker">Riccardo Guidotti</span>
+              </div>
+              <div class="column rightside">
+                <span class="block">
+                  <span class="wp">1</span>
+                  <span class="task">1</span>
+                  <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                  <span class="from">09:30</span> <span class="to">09:40 <i class="far fa-clock"></i></span>
+                </span>
+              </div>
+            </div>
+          
+          <div class="ui segment poster wp1 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/lore/">The LORE framework</a></span>
+              <span class="speaker">Salvatore Rinzivillo</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">1</span>
+                <span class="task">1</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">09:40</span> <span class="to">10:00 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="ui segment poster wp1 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/oralcancer/">Explainable diagnosis of oral cancer via deep learning and case-based reasoning</a></span>
+              <span class="speaker">Mario Giovanni Cosimo Antonio Cimino</span>
+              <span class="speaker">Tommaso Turchi</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">1</span>
+                <span class="task">4</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">10:00</span> <span class="to">10:20 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp1 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/hybrid/">AI, Meet Human: Learning Paradigms for Hybrid Decision Making Systems</a></span>
+              <span class="speaker">Roberto Pellungrini</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">1</span>
+                <span class="task">3</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">10:20</span> <span class="to">10:40 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+          
+          
+          <div class="ui segment poster wp1 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/abel/">ABEL: Human-in-the-loop in Human-Robot Interaction</a></span>
+              <span class="speaker">Lorenzo Cominelli</span>
+              <span class="speaker">Federico Galatolo</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">1</span>
+                <span class="task">5</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">10:40</span> <span class="to">11:00 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ui segments posters">
+          <div class="ui segment poster wp2 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/wp2/">System 1 and System 2: Machine Learning and Reasoning</a></span>
+              <span class="speaker">Umberto Straccia</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">2</span>
+                <span class="task">1</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">11:30</span> <span class="to">11:45 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="ui segment poster wp2 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/pnowl/">PN-OWL: A Two-Stage Algorithm to Learn Fuzzy Concept Inclusions Rules from OWL 2 Ontologies</a></span>
+              <span class="speaker">Umberto Straccia</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">2</span>
+                <span class="task">1</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">11:45</span> <span class="to">12:00 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp2 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/reasonx/">REASONX: Declarative Reasoning on Explanations Using Constraint Logic Programming</a></span>
+              <span class="speaker">Salvatore Ruggieri</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">2</span>
+                <span class="task">2</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">12:00</span> <span class="to">12:15 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="ui segment poster wp2 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/analysis/">Non-standard analysis to empower machine learning and deep learning algorithms: preliminary theoretical results</a></span>
+              <span class="speaker">Lorenzo Fiaschi</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">2</span>
+                <span class="task">3</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">12:15</span> <span class="to">12:30 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp2 two column grid container">
+            <div class="column">
+              <span class="title">TBA</span>
+              <span class="speaker">Marco Romito</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">2</span>
+                <span class="task">4</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">12:30</span> <span class="to">12:45 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="ui segments posters">
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/wp3/">Human-centered Lifelong Learning for Complex Data</a></span>
+              <span class="speaker">Alessio Micheli</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">1</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">14:00</span> <span class="to">14:10 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+          
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/vilma/">ViLMA: A Zero-Shot Benchmark for Linguistic and Temporal Grounding in Video-Language Models</a></span>
+              <span class="speaker">Andrea Pedrotti</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">4</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">14:10</span> <span class="to">14:20 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/visione/">VISIONE: A software tool for searching and browsing large video collections</a></span>
+              <span class="speaker">Nicola Messina</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">5</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">14:20</span> <span class="to">14:30 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/nodeclassification/">Advances in node classification with efficient models for learning on graphs</a></span>
+              <span class="speaker">Domenico Tortorella</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">3</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">14:30</span> <span class="to">14:40 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/rnn/">Pervasive continually learning RNNs with guarantees</a></span>
+              <span class="speaker">Davide Bacciu</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">1</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">14:40</span> <span class="to">14:50 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/engineering/">What do Large Language Models know about engineering relations?</a></span>
+              <span class="speaker">Vito Giordano</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">6</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">14:50</span> <span class="to">15:00 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+        
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/lifelong/">Lifelong learning for socially and environmentally sustainable AI</a></span>
+              <span class="speaker">Vincenzo Lomonaco</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">2</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">15:00</span> <span class="to">15:10 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="ui segment poster wp3 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/quantify/">Learning to quantify graph nodes</a></span>
+              <span class="speaker">Marco Podda</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">3</span>
+                <span class="task">5</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">15:10</span> <span class="to">15:20 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+
+        </div>
+          
+        <div class="ui segments posters">
+          <div class="ui segment poster colorful two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/keynote/">Keynote talk</a></span>
+              <span class="speaker">Paul Lukowicz</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <!-- <span class="wp"></span>
+                <span class="task"></span> -->
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">16:00</span> <span class="to">17:30 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="ui segments posters">
+          <div class="ui segment poster postersession two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/posters1/">Poster session</a></span>
+              <span class="speaker">WPs 1 through 3</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <!-- <span class="wp">2</span>
+                <span class="task">1</span> -->
+                <span class="location">Aula PS4 <i class="fas fa-map-marker"></i></span>
+                <span class="from">17:30</span> <span class="to">19:00 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui bottom attached tab segment" data-tab="tuesday">
+        <div class="ui segments posters">
+          <div class="ui segment poster wp4 two column grid container">
+            <div class="column">
+              <span class="title"><a href="/talks/wp4/">Human-AI Socio-Technical Complex Systems</a></span>
+              <span class="speaker">Chiara Boldrini</span>
+            </div>
+            <div class="column rightside">
+              <span class="block">
+                <span class="wp">4</span>
+                <span class="task">1</span>
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">09:00</span> <span class="to">09:10 <i class="far fa-clock"></i></span>
+              </span>
+            </div>
+          </div>
+        </div>
+  
+      <div class="ui segments posters">
+        <div class="ui segment poster wp5 two column grid container">
+          <div class="column">
+            <span class="title"><a href="/talks/wp5/">Decentralized, cooperative learning</a></span>
+            <span class="speaker">Francesco Marcelloni</span>
+            <span class="speaker">Raffaele Perego</span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <span class="wp">5</span>
+              <span class="task">1</span>
+              <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+              <span class="from">11:30</span> <span class="to">11:45 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="ui segment poster wp5 two column grid container">
+          <div class="column">
+            <span class="title"><a href="/talks/fpga/">Energy-efficient KNN on FPGA</a></span>
+            <span class="speaker">Franco Maria Nardini</span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <span class="wp">5</span>
+              <span class="task">1</span>
+              <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+              <span class="from">11:45</span> <span class="to">12:10 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="ui segment poster wp5 two column grid container">
+          <div class="column">
+            <span class="title"><a href="/talks/p2p/">Exploring the Impact of Disrupted P2P Communications on Fully Decentralised Learning in Disaster Scenarios</a></span>
+            <span class="speaker">Lorenzo Valerio</span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <span class="wp">5</span>
+              <span class="task">1</span>
+              <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+              <span class="from">12:10</span> <span class="to">12:35 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+
+        <div class="ui segment poster wp5 two column grid container">
+          <div class="column">
+            <span class="title"><a href="/talks/ducange/">Federated learning of interpretable AI models: a privacy preserving solution to collaboratively learn Trustworthy AI systems</a></span>
+            <span class="speaker">Pietro Ducange</span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <span class="wp">5</span>
+              <span class="task">1</span>
+              <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+              <span class="from">12:35</span> <span class="to">13:00 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+    </div>
+
+    <div class="ui segments posters">
+      <div class="ui segment poster wp6 two column grid container">
+        <div class="column">
+          <span class="title"><a href="/talks/wp6/">Co-design methodologies for trustworthiness by-design</a></span>
+          <span class="speaker">Anna Monreale</span>
+        </div>
+        <div class="column rightside">
+          <span class="block">
+            <span class="wp">6</span>
+            <span class="task">1</span>
+            <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+            <span class="from">14:00</span> <span class="to">14:10 <i class="far fa-clock"></i></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="ui segment poster wp6 two column grid container">
+        <div class="column">
+          <span class="title"><a href="/talks/dada/">Overview and analysis on the Ethical Codes</a></span>
+          <span class="speaker">Silvia Dadà</span>
+          <span class="speaker">Adriano Fabris</span>
+        </div>
+        <div class="column rightside">
+          <span class="block">
+            <span class="wp">6</span>
+            <span class="task">1</span>
+            <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+            <span class="from">14:10</span> <span class="to">14:30 <i class="far fa-clock"></i></span>
+          </span>
+        </div>
+      </div>
+      
+      <div class="ui segment poster wp6 two column grid container">
+        <div class="column">
+          <span class="title"><a href="/talks/neri/">Ethics, image generation and AI</a></span>
+          <span class="speaker">Veronica Neri</span>
+        </div>
+        <div class="column rightside">
+          <span class="block">
+            <span class="wp">6</span>
+            <span class="task">1</span>
+            <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+            <span class="from">14:30</span> <span class="to">14:50 <i class="far fa-clock"></i></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="ui segment poster wp6 two column grid container">
+        <div class="column">
+          <span class="title"><a href="/talks/bernardeschi/">Formal verification of neural networks in cyber-physical systems</a></span>
+          <span class="speaker">Cinzia Bernardeschi</span>
+          <span class="speaker">Federico Rossi</span>
+        </div>
+        <div class="column rightside">
+          <span class="block">
+            <span class="wp">6</span>
+            <span class="task">3</span>
+            <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+            <span class="from">14:50</span> <span class="to">15:10 <i class="far fa-clock"></i></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="ui segment poster wp6 two column grid container">
+        <div class="column">
+          <span class="title"><a href="/talks/naretto/">Privacy risk assessment of (X)AI systems and their mitigation</a></span>
+          <span class="speaker">Francesca Naretto</span>
+        </div>
+        <div class="column rightside">
+          <span class="block">
+            <span class="wp">6</span>
+            <span class="task">3</span>
+            <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+            <span class="from">15:10</span> <span class="to">15:30 <i class="far fa-clock"></i></span>
+          </span>
+        </div>
+      </div>
+
+      </div>
+      
+      <div class="ui segments posters">
+        <div class="ui segment poster two column grid container colorful">
+          <div class="column">
+            <span class="title"><a href="/talks/industry/">FAIR meets industry</a></span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <!-- <span class="wp">6</span>
+                <span class="task">3</span> -->
+                <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+                <span class="from">16:00</span> <span class="to">17:00 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="ui segments posters">
+        <div class="ui segment poster two column grid container colorful">
+          <div class="column">
+            <span class="title"><a href="/talks/roundtable/">Round table of WP leaders</a></span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <!-- <span class="wp">6</span>
+              <span class="task">3</span> -->
+              <span class="location">Aula Magna <i class="fas fa-map-marker"></i></span>
+              <span class="from">17:00</span> <span class="to">18:00 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ui segments posters">
+        <div class="ui segment poster postersession two column grid container">
+          <div class="column">
+            <span class="title"><a href="/talks/posters2/">Poster session</a></span>
+            <span class="speaker">WPs 4 through 6</span>
+          </div>
+          <div class="column rightside">
+            <span class="block">
+              <!-- <span class="wp">2</span>
+              <span class="task">1</span> -->
+              <span class="location">Aula PS4 <i class="fas fa-map-marker"></i></span>
+              <span class="from">18:00</span> <span class="to">19:00 <i class="far fa-clock"></i></span>
+            </span>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="calendarview">
+      <ul class="nav justify-content-center mb-3 btn-group" id="day-list" role="tablist">
+          {%- for d in site.data.program.days -%}
+            {%- include partials/get_day_hash.html %}
+            <li class="nav-item" role="presentation">
+              <a class="nav-link btn btn-outline-secondary {%- if forloop.index == 1 %} active{% endif %}" id="tab-{{ day_hash }}" data-toggle="tab" {%- if d.date %} data-date="{{ d.date }}" {%- endif %} href="#{{ day_hash }}" role="tab" aria-controls="{{ day_hash }}" aria-selected="{% if forloop.index == 1 %}true{% else %}false{% endif %}">{{ day_name }}</a>
+            </li>
+          {%- endfor %}
+        </ul>
+        <div class="tab-content" id="day-content">
+      {%- endif %}
+
+      {%- for d in site.data.program.days -%}
+        {%- if nbr_days > 1 -%}
+          {%- include partials/get_day_hash.html %}
+          <div class="tab-pane {%- if forloop.index == 1 %} active{% endif %}" id="{{ day_hash }}" role="tabpanel" aria-labelledby="tab-{{ day_hash }}">
+        {%- endif %}
+
+        <div class="sticky-top syncscroll overflow-hidden" name="sync-table">
+          <table class="table mb-0 mx-auto">
+            <thead>
+              <tr>
+                <th scope="col" class="col-title text-right">#<span class="invisible">I0</span></th>
+                <th class="col-space p-0" scope="col"></th>
+                {%- assign nbr_rooms = d.rooms | size -%}
+                {%- for r in d.rooms -%}
+                  {%- assign room = site.rooms | where: 'name', r.name | first %}
+                  <th scope="col" class="text-center">
+                    {%- if room.hide or site.conference.location.hide -%}
+                      {{- room.name -}}
+                    {%- else -%}
+                      <a class="text-reset" href="{{ room.url | prepend: site.baseurl }}">
+                        {{- room.name -}}
+                      </a>
+                    {%- endif -%}
+                  </th>
+                  {%- unless forloop.last %}
+                    <th class="col-space p-0" scope="col"></th>
+                  {%- endunless -%}
+                {%- endfor %}
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="syncscroll overflow-y-hidden" name="sync-table">
+          <table class="table mx-auto">
+            <tbody>
+              {%- include partials/get_day_time.html -%}
+
+              {%- if day_end_day > day_start_day -%}
+                {%- assign day_end_hour = day_end_day | minus: day_start_day | times: 24 | plus: day_end_hour -%}
+              {%- endif -%}
+
+              {%- assign day_duration_min = day_end_hour | minus: day_start_hour | times: 60 | minus: day_start_min | plus: day_end_min -%}
+              {%- assign nbr_steps = day_duration_min | divided_by: site.conference.program.time_steps -%}
+
+              <!--
+              The shadow of a previous program block should be above a later program block, thus
+              the earlier a program block the higher its z-index (opposite to the actual rendering).
+
+              Bootstrap uses as lowest z-index for its overlapping elements a z-index of 1000 (for
+              $zindex-dropdown).
+              -->
+              {%- assign z-index-max = 999 -%}
+
+              {%- for i in (1..nbr_steps) -%}
+                {%- assign current_day = 0 -%}
+                {%- assign current_hour = i | minus: 1 | times: site.conference.program.time_steps | plus: day_start_min | divided_by: 60 | floor | plus: day_start_hour -%}
+                {%- if current_hour >= 24 -%}
+                  {%- assign current_day = current_hour | divided_by: 24 | floor -%}
+                  {%- assign current_hour = current_hour | modulo: 24 -%}
+                {%- endif -%}
+                {%- assign current_min = i | minus: 1 | times: site.conference.program.time_steps | plus: day_start_min | modulo: 60 -%}
+                {%- if current_min < 10 -%}
+                  {%- assign current_time = current_hour | append: ':0' | append: current_min -%}
+                {%- else -%}
+                  {%- assign current_time = current_hour | append: ':' | append: current_min -%}
+                {%- endif -%}
+
+                <tr>
+
+                  {%- if current_min == 0 -%}
+                    <th scope="row" class="col-title text-right" style="z-index: {{ z-index-max }}">
+                      {{- current_time -}}
+                    </th>
+                  {%- elsif site.conference.program.show_alltimes -%}
+                    <th scope="row" class="col-title text-right text-muted font-weight-normal" style="z-index: {{ z-index-max }}">
+                      :{{ current_min }}
+                    </th>
+                  {%- else -%}
+                    <th scope="row" class="col-title" style="z-index: {{ z-index-max }}"></th>
+                  {%- endif %}
+                  <td class="col-space p-0"></td>
+
+                  {%- for r in d.rooms -%}
+                    {%- assign room = site.rooms | where: 'name', r.name | first -%}
+
+                    {%- assign active_talk = false -%}
+                    {%- for t in r.talks -%}
+                      {%- assign talk = site.talks | where: 'name', t.name | first -%}
+
+                      {%- include partials/get_talk_time.html -%}
+
+                      {%- assign d_start_hour = current_day | minus: talk_start_day | times: 24 | plus: current_hour | minus: talk_start_hour -%}
+                      {%- assign d_start_min = current_min | minus: talk_start_min -%}
+                      {%- assign d_end_hour = current_day | minus: talk_end_day | times: 24 | plus: current_hour | minus: talk_end_hour -%}
+                      {%- assign d_end_min = current_min | minus: talk_end_min -%}
+
+                      {%- assign has_started = false -%}
+                      {%- if d_start_hour == 0 and d_start_min > 0 -%}
+                        {%- assign has_started = true -%}
+                      {%- endif -%}
+                      {%- if d_start_hour > 0 -%}
+                        {%- assign has_started = true -%}
+                      {%- endif -%}
+
+                      {%- assign has_ended = false -%}
+                      {%- if d_end_hour == 0 and d_end_min >= 0 -%}
+                        {%- assign has_ended = true -%}
+                      {%- endif -%}
+                      {%- if d_end_hour > 0 -%}
+                        {%- assign has_ended = true -%}
+                      {%- endif -%}
+
+                      {%- if has_started == true and has_ended == false -%}
+                        {%- assign active_talk = true -%}
+                      {%- endif -%}
+
+                      {%- if d_start_hour == 0 and d_start_min == 0 -%}
+
+                        {%- assign talk_nbr_steps = talk_duration_min | divided_by: site.conference.program.time_steps -%}
+                        {%- include partials/get_main_category.html -%}
+                        <td rowspan="{{ talk_nbr_steps }}" class="alert alert-{{ main_cat_color }} shadow-sm overflow-hidden" style="z-index: {{ z-index-max | minus: i }}">
+
+                          {%- assign live_button_styleclass = "mb-2" %}
+                          {%- include partials/show_live_button.html %}
+
+                          <p class="mb-2">
+                            {%- include partials/show_talk.html %}
+                          </p>
+                          <p class="font-weight-light mb-2">
+                            {%- include partials/list_speakers.html %}
+                          </p>
+                          <p class="mb-1">
+                            {%- include partials/list_sub_categories.html %}
+                          </p>
+                        </td>
+                        {%- assign active_talk = true %}
+
+                      {%- endif %}
+
+                    {%- endfor %}
+
+                    {%- unless active_talk == true %}
+                      <td class="p-0"></td>
+                    {%- endunless -%}
+
+                    {%- if forloop.last != true %}
+                      <td class="col-space p-0"></td>
+                    {%- endif -%}
+
+                  {%- endfor %}
+
+                </tr>
+              {%- endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        {%- if nbr_days > 1 %}
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if nbr_days > 1 %}
+        </div>
+      {%- endif -%}
+
+    </div>
+
+    <script>
+      $('#toptabs.menu .item').tab();
+      $('#innertabs.menu .item').tab();
+    </script>
+
+  <!-- {%- if site.conference.talks.main_categories %}
+    <h5 class="mt-4">{{ site.data.lang[site.conference.lang].program.legend | default: "Caption" }}</h5>
+      {%- for main_cat in site.conference.talks.main_categories %}
+        <div class="d-block d-sm-inline-block m-1 p-1 pl-2 pr-2 border-soft-{{ main_cat.color }} bg-soft-{{ main_cat.color }} font-weight-normal">
+          {{- main_cat.name -}}
+        </div>
+      {%- endfor -%}
+  {%- endif -%} -->
+
+{% include partials/footer.html %}

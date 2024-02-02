@@ -1,0 +1,122 @@
+:root {
+    --fairblue: #64a9dd;
+    --fairred: #eb6666;
+    --fairorange: #f8b258;
+    --fairpurple: #78579f;
+
+    --wp1: #78579f;
+    --wp2: #9f578d;
+    --wp3: #eb6666;
+    --wp4: #eb8a66;
+    --wp5: #f8b258;
+    --wp6: #64a9dd;
+}
+
+
+.time {
+    margin-right: 0.5em;
+    padding: 2px 5px;
+
+    color: darkgray;
+}
+
+.from::after {
+    content: " - ";
+}
+
+/* **************** */
+/* List of posters */
+/* **************** */
+.posters a {
+    color: black;
+}
+
+.poster.wp1 a:hover {
+    color: var(--wp1);
+}
+
+.poster.wp2 a:hover {
+    color: var(--wp2);
+}
+
+.poster.wp3 a:hover {
+    color: var(--wp3);
+}
+
+.poster.wp4 a:hover {
+    color: var(--wp4);
+}
+
+.poster.wp5 a:hover {
+    color: var(--wp5);
+}
+
+.poster.wp6 a:hover {
+    color: var(--wp6);
+}
+
+
+.poster.keynote .wp,
+.poster.keynote .task {
+    display: none;
+}
+
+
+.poster .block {
+    float: right;
+    text-align: right;
+}
+
+.poster .title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.segments span.speaker {
+    display: block;
+    color: darkgray;
+}
+
+.ui.segment.poster {
+    margin-top: 0;
+}
+
+.poster .wp::before {
+    content: "WP: ";
+}
+
+.poster .task::before {
+    content: ", Task: ";
+}
+
+.poster .rightside * {
+    color: darkgray;
+}
+
+.poster .location {
+    display: block;
+}
+
+.poster.wp1 {
+    border-left: 5px solid var(--wp1) !important;
+}
+
+.poster.wp2 {
+    border-left: 5px solid var(--wp2) !important;
+}
+
+.poster.wp3 {
+    border-left: 5px solid var(--wp3) !important;
+}
+
+.poster.wp4 {
+    border-left: 5px solid var(--wp4) !important;
+}
+
+.poster.wp5 {
+    border-left: 5px solid var(--wp5) !important;
+}
+
+.poster.wp6 {
+    border-left: 5px solid var(--wp6) !important;
+}
