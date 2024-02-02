@@ -55,6 +55,28 @@ Poster session dedicated to WP 1, 2, and 3.
 
 
 <div class="ui segments">
+  <div class="ui segment poster wp2">
+    <span class="title">Correlation and Unintended Biases on Univariate and Multivariate Decision Trees</span>
+    <span class="block">
+      <span class="wp">2</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Mattia Setzu</p>
+  </div>
+
+  <div class="ui segment poster wp2">
+    <span class="title">Critical points and convergence analysis of generative deep neural networks trained with Bures-Wasserstein loss</span>
+    <span class="block">
+      <span class="wp">2</span>
+      <span class="task">4</span>
+    </span>
+    <p class="presenter">Katerina Papagiannouli</p>
+  </div>
+
+  
+</div>
+
+<div class="ui segments">
   <div class="ui segment poster wp3">
     <span class="title">Assessing Language-and-Vision Language Models on Event Plausibility</span>
     <span class="block">
@@ -83,7 +105,7 @@ Poster session dedicated to WP 1, 2, and 3.
   </div>
 
   <div class="ui segment poster wp3">
-    <span class="title">Continual Learning & Compositionality for Sustainable AI</span>
+    <span class="title">l</span>
     <span class="block">
       <span class="wp">3</span>
       <span class="task">2</span>
@@ -110,16 +132,63 @@ Poster session dedicated to WP 1, 2, and 3.
   </div>
   
   <div class="ui segment poster wp3">
-    <span class="title">Learning to quantify graph nodes</span>
+    <span class="title">Towards the Development of Text-Image Patent Datasets for Enhancing Engineering Design</span>
     <span class="block">
       <span class="wp">3</span>
       <span class="task">3</span>
     </span>
-    <p class="presenter">Marco Podda</p>
+    <p class="presenter">Vito Giordano, Marco Consoloni</p>
   </div>
 </div>
 
 <div class="ui segments">
+  <div class="ui segment poster wp5">
+    <span class="title">Learning to Rank for non Independent and Identically Distributed Datasets</span>
+    <span class="block">
+      <span class="wp">5</span>
+      <span class="task"></span>
+    </span>
+    <p class="presenter">Jacopo Cecchetti</p>
+  </div>
+
+  <div class="ui segment poster wp5">
+    <span class="title">Energy-aware DNN training on resource-constrained devices</span>
+    <span class="block">
+      <span class="wp">5</span>
+      <span class="task"></span>
+    </span>
+    <p class="presenter">Simone Mozzon</p>
+  </div>
+
+  <span class="title">The effect of network topologies on fully decentralized learning: a preliminary investigation</span>
+    <span class="block">
+      <span class="wp">5</span>
+      <span class="task"></span>
+    </span>
+    <p class="presenter">Luigi Palmieri</p>
+  </div>
+
+  <span class="title">Federated Learning of Explainable Artificial Intelligence Models: A Proof-of-Concept for Video-streaming Quality Forecasting in B5G/6G networks</span>
+    <span class="block">
+      <span class="wp">5</span>
+      <span class="task"></span>
+    </span>
+    <p class="presenter">Alessandro Renda</p>
+  </div>
+
+  
+  <span class="title">Federated Learning of Explainable Artificial Intelligence Models in Healthcare: a Case Study on Parkinson’s Disease</span>
+    <span class="block">
+      <span class="wp">5</span>
+      <span class="task"></span>
+    </span>
+    <p class="presenter">Fabrizio Ruffini</p>
+  </div>
+
+  
+</div>
+  
+  <div class="ui segments">
   <div class="ui segment poster wp6">
     <span class="title">Human Beings and Artificial Intelligence as Each Other’s Mirror </span>
     <span class="block">
