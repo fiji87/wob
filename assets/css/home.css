@@ -30,24 +30,28 @@
     color: white;
 }
 
-.btn-outline-primary:nth-child(1):hover {
+.btn-outline-primary:nth-child(1):hover,
+.btn-outline-primary:nth-child(1):active {
     color: white;
     background: var(--fairblue);
     border-color: var(--fairblue);   
 }
 
-.btn-outline-primary:nth-child(2):hover {
+.btn-outline-primary:nth-child(2):hover,
+.btn-outline-primary:nth-child(2):active {
     background: var(--fairred);
     border-color: var(--fairred);   
 }
 
-.btn-outline-primary:nth-child(3):hover {
+.btn-outline-primary:nth-child(3):hover,
+.btn-outline-primary:nth-child(3):active {
     color: black;
     background: var(--fairorange);
     border-color: var(--fairorange);   
 }
 
-.btn-outline-primary:nth-child(4):hover {
+.btn-outline-primary:nth-child(4):hover,
+.btn-outline-primary:nth-child(4):active {
     background: var(--fairpurple);
     border-color: var(--fairpurple);   
 }
