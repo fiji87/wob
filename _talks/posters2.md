@@ -4,7 +4,7 @@ name: Second poster session
 
 Poster session dedicated to WP 4, 5, and 6.
 
-<div class="ui segments">
+<!-- <div class="ui segments">
   <div class="ui segment poster wp4">
     <span class="title">Title</span>
     <span class="block">
@@ -12,7 +12,7 @@ Poster session dedicated to WP 4, 5, and 6.
       <span class="task">1</span>
     </span>
   </div>
-</div>
+</div> -->
 
 <div class="ui segments">
   <div class="ui segment poster wp5">
@@ -33,7 +33,8 @@ Poster session dedicated to WP 4, 5, and 6.
     <p class="presenter">Simone Mozzon</p>
   </div>
 
-  <span class="title">The effect of network topologies on fully decentralized learning: a preliminary investigation</span>
+  <div class="ui segment poster wp5">
+    <span class="title">The effect of network topologies on fully decentralized learning: a preliminary investigation</span>
     <span class="block">
       <span class="wp">5</span>
       <span class="task"></span>
@@ -41,7 +42,8 @@ Poster session dedicated to WP 4, 5, and 6.
     <p class="presenter">Luigi Palmieri</p>
   </div>
 
-  <span class="title">Federated Learning of Explainable Artificial Intelligence Models: A Proof-of-Concept for Video-streaming Quality Forecasting in B5G/6G networks</span>
+  <div class="ui segment poster wp5">
+    <span class="title">Federated Learning of Explainable Artificial Intelligence Models: A Proof-of-Concept for Video-streaming Quality Forecasting in B5G/6G networks</span>
     <span class="block">
       <span class="wp">5</span>
       <span class="task"></span>
@@ -50,6 +52,7 @@ Poster session dedicated to WP 4, 5, and 6.
   </div>
 
   
+  <div class="ui segment poster wp5">
   <span class="title">Federated Learning of Explainable Artificial Intelligence Models in Healthcare: a Case Study on Parkinson’s Disease</span>
     <span class="block">
       <span class="wp">5</span>
