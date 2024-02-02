@@ -3,9 +3,10 @@ preposition: at
 description: >-
   In partnership with the Humane-AI network of excellence.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://example.com" # the base hostname & protocol for your site, e.g. https://example.com
+url: "" # the base hostname & protocol for your site, e.g. https://example.com
 
 theme: jekyll-theme-conference
+# remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
 
 # Build settings
 markdown: kramdown
