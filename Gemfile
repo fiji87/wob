@@ -3,6 +3,8 @@
 source "https://rubygems.org"
 # gemspec
 
-gem "jekyll"
+# gem "jekyll"
+gem "github-pages", group: :jekyll_plugins
 gem "json"
-gem "jekyll-theme-conference"
+gem "webrick"
+# gem "jekyll-theme-conference"
