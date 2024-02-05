@@ -89,7 +89,7 @@
 }
 
 /* logos */
-div.images img.centered.image {
+div.images img.ui.small.centered.image {
     display: block;
     margin-left: auto;
     margin-right: auto;
