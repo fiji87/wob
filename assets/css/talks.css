@@ -138,3 +138,8 @@
 .posters .poster:nth-child(1) .title::before {
     content: 'Session: ';
 }
+
+.segments.posters {
+    border: none;
+    box-shadow: none;
+}
