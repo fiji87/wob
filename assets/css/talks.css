@@ -121,3 +121,20 @@
 .poster.wp6 {
     border-left: 5px solid var(--wp6) !important;
 }
+
+
+/* indenting single highlight */
+.posters .poster:nth-child(n + 2) {
+    width: 90% !important;
+    margin-left: 10% !important;
+}
+ 
+.posters .poster:nth-child(n + 2) .from,
+.posters .poster:nth-child(n + 2) .to,
+.posters .poster:nth-child(n + 2) .location {
+    display: none;
+}
+ 
+.posters .poster:nth-child(1) .title::before {
+    content: 'Session: ';
+}
