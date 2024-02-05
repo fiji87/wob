@@ -137,4 +137,24 @@ Poster session dedicated to WP 1, 2, and 3.
     </span>
     <p class="presenter">Vito Giordano, Marco Consoloni</p>
   </div>
+
+  <div class="ui segment poster wp3">
+    <span class="title">Kernel density estimation for multiclass quantification</span>
+    <span class="block">
+      <span class="wp">3</span>
+      <span class="task">5</span>
+    </span>
+    <p class="presenter">Alejandro Moreo</p>
+  </div>
+
+  <div class="ui segment poster wp3">
+    <span class="title">Using Quantification to Predict Classifier Accuracy under Prior Probability Shift</span>
+    <span class="block">
+      <span class="wp">3</span>
+      <span class="task">5</span>
+    </span>
+    <p class="presenter">Fabrizio Sebastiani</p>
+  </div>
+
+  
 </div>

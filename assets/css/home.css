@@ -33,27 +33,27 @@
 .btn-outline-primary:nth-child(1):hover,
 .btn-outline-primary:nth-child(1):active {
     color: white;
-    background: var(--fairblue);
-    border-color: var(--fairblue);   
+    background: var(--fairblue) !important;
+    border-color: var(--fairblue) !important;
 }
 
 .btn-outline-primary:nth-child(2):hover,
 .btn-outline-primary:nth-child(2):active {
-    background: var(--fairred);
-    border-color: var(--fairred);   
+    background: var(--fairred) !important;
+    border-color: var(--fairred) !important;
 }
 
 .btn-outline-primary:nth-child(3):hover,
 .btn-outline-primary:nth-child(3):active {
     color: black;
-    background: var(--fairorange);
-    border-color: var(--fairorange);   
+    background: var(--fairorange) !important;
+    border-color: var(--fairorange) !important;
 }
 
 .btn-outline-primary:nth-child(4):hover,
 .btn-outline-primary:nth-child(4):active {
-    background: var(--fairpurple);
-    border-color: var(--fairpurple);   
+    background: var(--fairpurple) !important;
+    border-color: var(--fairpurple) !important;
 }
 
 /* fancy border bottom */

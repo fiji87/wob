@@ -4,15 +4,84 @@ name: Second poster session
 
 Poster session dedicated to WP 4, 5, and 6.
 
-<!-- <div class="ui segments">
+<div class="ui segments">
   <div class="ui segment poster wp4">
-    <span class="title">Title</span>
+    <span class="title">The impact of AI on labour demand and workforce management</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Caterina Pareo</p>
+  </div>
+
+  <div class="ui segment poster wp4">
+    <span class="title">The impact of AI on labour demand and workforce management</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Caterina Pareo</p>
+  </div>
+
+  <div class="ui segment poster wp4">
+    <span class="title">The impact of AI on labour demand and workforce management</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Caterina Pareo</p>
+  </div>
+
+  <div class="ui segment poster wp4">
+    <span class="title">Tax Losses and Bankruptcy Emergence Prediction</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Federica De Santis</p>
+    <p class="presenter">Alessandro Gabrielli</p>
+  </div>
+
+  <div class="ui segment poster wp4">
+    <span class="title">Artificial intelligence and new visions of the future of the city</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Michela Lazzeroni</p>
+    <p class="presenter">Antonello Romano</p>
+  </div>
+
+  <div class="ui segment poster wp4">
+    <span class="title">Human-AI coevolution in LLMs</span>
     <span class="block">
       <span class="wp">4</span>
       <span class="task">1</span>
     </span>
+    <p class="presenter">Daniele Gambetta</p>
+    <p class="presenter">Gizem Gezici</p>
   </div>
-</div> -->
+
+  <div class="ui segment poster wp4">
+    <span class="title">Cultural differences in signed ego networks</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Jack Tacchi</p>
+  </div>
+
+  <div class="ui segment poster wp4">
+    <span class="title">How routing strategies impact urban emissions</span>
+    <span class="block">
+      <span class="wp">4</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Giuliano Cornacchia</p>
+  </div>
+
+  
+</div>
 
 <div class="ui segments">
   <div class="ui segment poster wp5">
