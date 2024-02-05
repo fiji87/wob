@@ -56,6 +56,15 @@ Poster session dedicated to WP 1, 2, and 3.
 
 <div class="ui segments">
   <div class="ui segment poster wp2">
+    <span class="title">DNN Benchmarks for Selective Classification</span>
+    <span class="block">
+      <span class="wp">2</span>
+      <span class="task">2</span>
+    </span>
+    <p class="presenter">Andrea Pugnana</p>
+  </div>
+
+  <div class="ui segment poster wp2">
     <span class="title">Correlation and Unintended Biases on Univariate and Multivariate Decision Trees</span>
     <span class="block">
       <span class="wp">2</span>
