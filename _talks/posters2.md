@@ -15,31 +15,12 @@ Poster session dedicated to WP 4, 5, and 6.
   </div>
 
   <div class="ui segment poster wp4">
-    <span class="title">The impact of AI on labour demand and workforce management</span>
-    <span class="block">
-      <span class="wp">4</span>
-      <span class="task">2</span>
-    </span>
-    <p class="presenter">Caterina Pareo</p>
-  </div>
-
-  <div class="ui segment poster wp4">
-    <span class="title">The impact of AI on labour demand and workforce management</span>
-    <span class="block">
-      <span class="wp">4</span>
-      <span class="task">2</span>
-    </span>
-    <p class="presenter">Caterina Pareo</p>
-  </div>
-
-  <div class="ui segment poster wp4">
     <span class="title">Tax Losses and Bankruptcy Emergence Prediction</span>
     <span class="block">
       <span class="wp">4</span>
       <span class="task">2</span>
     </span>
-    <p class="presenter">Federica De Santis</p>
-    <p class="presenter">Alessandro Gabrielli</p>
+    <p class="presenter">Federica De Santis, Alessandro Gabrielli</p>
   </div>
 
   <div class="ui segment poster wp4">
@@ -77,7 +58,7 @@ Poster session dedicated to WP 4, 5, and 6.
       <span class="wp">4</span>
       <span class="task">2</span>
     </span>
-    <p class="presenter">Giuliano Cornacchia</p>
+    <p class="presenter">Mirco Nanni</p>
   </div>
 
   
