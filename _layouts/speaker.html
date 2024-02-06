@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/speaker.css">
+
 {%- assign speaker = page -%}
 
 {%- unless speaker.hide -%}
@@ -10,6 +12,9 @@
   <h1 class="font-weight-light mb-3">
     {{ speaker.first_name }} {{ speaker.last_name }}
   </h1>
+  <p class="affiliation">
+    {{ speaker.affiliation }}
+  </p>
 
   {{ content }}
 
